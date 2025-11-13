@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" type="image/jpg" href="2.PNG">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+ 
+Education System in Nepal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #0097a7;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            font-weight: 400;
+        }
+
+        /* Navigation Section */
+        nav {
+            background-color: #007c8a;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #f9a825;
+        }
+
+        /* Featured Sections */
+        .featured-sections {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            gap: 20px;
+        }
+
+        .featured-item {
+            background-color: #0097a7;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .featured-item:hover {
+            transform: scale(1.05);
+        }
+
+        .featured-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .featured-item p {
+            font-size: 1.1rem;
+        }
+
+        .cta-btn {
+            background-color: #f9a825;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #f57f17;
+        }
+
+        /* Statistics Section */
+        .stats-section {
+            background-color: #f4f6f9;
+            padding: 40px 20px;
+            margin-top: 50px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            background-color: #0097a7;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 25%;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-item h4 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+        }
+
+        .stat-item:hover {
+            transform: scale(1.1);
+        }
+
+        /* Testimonial Section */
+        .testimonial-section {
+            background-color: #f9a825;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+
+        .testimonial-section em {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Call to Action Section */
+        .cta-section {
+            background-color: #0097a7;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+
+        .cta-section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Social Media Links Section */
+        .social-media-section {
+            background-color: #f4f6f9;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icon {
+            background-color: #0097a7;
+            color: white;
+            font-size: 1.5rem;
+            padding: 15px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: #f9a825;
+        }
+
+        /* Page Content */
+        .page-content {
+            padding: 50px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .page-content:hover {
+            
+            opacity: 0.95;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+                margin: 0 10px;
+            }
+
+            .featured-sections {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .stats-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .stat-item {
+                width: 80%;
+                margin: 10px 0;
+            }
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<header>
+<P TEXT-ALIGN="LEFT">INFOEDUCATION</P>
+    <h1>Education System in Nepal</h1>
+    <p>Empowering students, strengthening Nepal</p>
+</header>
+
+<nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('main')">Main Page</a>
+    <a href="#" onclick="showPage('news')">NEWS</a>
+    <a href="#" onclick="showPage('contact')">Contact</a>
+</nav>
+
+<section id="home" class="page-content fadeIn">
+
+    <h2>Welcome to the Education System in Nepal</h2>
+    <p>The education system in Nepal is evolving, with efforts to make it more inclusive and accessible. Discover the history, challenges, and progress of education in Nepal.</p>
+
+    <!-- Featured Sections with Quick Links -->
+    <div class="featured-sections">
+        <div class="featured-item">
+            <h3>Challenges in Education</h3>
+            <p>Learn about the major hurdles the Nepalese education system faces today and why they need to be addressed.</p>
+            <a href="#main" class="cta-btn">Explore Challenges</a>
+        </div>
+        <div class="featured-item">
+            <h3>Government Initiatives</h3>
+            <p>Discover the key policies and initiatives that the government has implemented to improve education in Nepal.</p>
+            <a href="#main" class="cta-btn">Read More</a>
+        </div>
+        <div class="featured-item">
+            <h3>Curriculum Reforms</h3>
+            <p>Understand the ongoing curriculum reforms that aim to modernize and enhance the quality of education.</p>
+            <a href="#main" class="cta-btn">See Reforms</a>
+        </div>
+    </div>
+
+    <!-- Statistics Section -->
+    <div class="stats-section">
+        <h3>Key Facts About Nepal's Education</h3>
+        <div class="stats-container">
+            <div class="stat-item">
+                <h4>70%</h4>
+                <p>Primary School Enrollment Rate</p>
+            </div>
+            <div class="stat-item">
+                <h4>55%</h4>
+                <p>Female Literacy Rate</p>
+            </div>
+            <div class="stat-item">
+                <h4>80%</h4>
+                <p>Dropout Rate at Secondary Level</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="testimonial-section">
+        <h3>What People Say</h3>
+        <p><em>"The education system in Nepal needs reform, but it is full of potential. By focusing on quality and inclusivity, we can make a difference."</em></p>
+        <p>- Dr. Ram Kumar Sharma, Educator</p>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="cta-section">
+        <h3>Get Involved</h3>
+        <p>Want to help improve education in Nepal? Join the movement today and support educational reforms.</p>
+      
+    </div>
+<footer>
+   
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<style>
+    /* Footer Styles */
+    footer {
+        background-color: #007c8a;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-links {
+        margin: 10px 0;
+    }
+
+    .footer-links a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #f9a825;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-icon {
+        background-color: #0097a7;
+        color: white;
+        font-size: 1.5rem;
+        padding: 10px;
+        border-radius: 50%;
+        margin: 0 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .social-icon:hover {
+        background-color: #f9a825;
+    }
+</style>
+    <!-- Social Media Links -->
+   
+      
+    </div>
+</section>
+<section id="main" class="page-content fadeIn" style="display:none;">
+    <h1>Main Page - The Education System in Nepal</h2>
+        <h2>The Education System of Nepal: A Comedy of Grades, Exams, and Unnecessary Rules</h1>
+        <p>The education system in Nepal, while full of potential, often feels like a never-ending loop of exams, grades, and rules that no one quite understands. Students are caught in a relentless pursuit of grades, rather than gaining actual knowledge, and the rules? Oh boy, the rules are often more about enforcing a “look” than a real learning experience. Let’s break down the comedy that is Nepal’s education system.</p>
+    
+        <h3>The Grade-Obsessed Culture: Forget Knowledge, Just Get the Marks</h2>
+        <p>In Nepal, education is less about nurturing curious minds and more about creating a nation of grade-collectors. Schools are filled with students who know exactly what they're doing: studying not to learn, but to <strong>get those grades</strong>. You’re memorizing facts about everything from the history of the world to the exact chemical composition of salt, all in the hopes of squeezing out that one mark that will get you closer to the golden ticket of success. The pressure is so intense, it’s almost like the education system is saying, “Why bother understanding, when you can just memorize everything for the exam?”</p>
+        <p>Teachers are often trapped in the same cycle, focusing on making sure students are “prepared” for exams rather than focusing on creativity, critical thinking, or even basic understanding. The real test isn’t how much you know, but how well you can regurgitate a textbook during the final exam. Heaven forbid you ask, “Why do I need to know this?” The answer you’ll receive? “It’s on the exam.” It’s all about those letters: A+, B+, C... and occasionally the dreaded D.</p>
+        <h3>Exams: The Ultimate Test of Memorization, Not Intelligence</h2>
+        <p>Speaking of exams, in Nepal, they’re basically the Super Bowl of education. From the start of the school year, students begin mentally preparing for the day when they’ll have to face <strong>the exams</strong>—and the whole system builds towards that one grand showdown. Forget about learning at your own pace, or being curious about the subjects. Every chapter you study feels like it’s just a piece of the exam puzzle, and if it’s not on the exam syllabus, it’s pretty much irrelevant.</p>
+        <p>You might find yourself staring at a question in the exam that seems like a foreign language to you. “What? I was supposed to memorize this <em>exact</em> paragraph from the textbook, not actually understand it?” But guess what? That’s the game! No one asks you to <strong>apply</strong> knowledge, just to <strong>remember</strong> it. If you manage to do both, you might just get the highest score in the class. If not? Well, at least you gave it a shot.</p>
+        <h3>Homework: The Infinite Pages of Nonsense</h2>
+        <p>Now let’s talk about homework. In Nepal, it’s a tradition—no, a rite of passage—to be burdened with mind-numbing amounts of homework. You won’t just write one page. Oh no, the more the better! Ten pages of handwriting on a single topic? Perfect! And it’s not about critical thinking or creativity; it’s all about writing every single word neatly (because neatness, of course, is the true test of your intellectual abilities). Whether you understand the material or not is secondary. What really matters is how perfectly those pages are filled out, preferably with handwriting so flawless that even the gods would be impressed.</p>
+        <p>The real kicker? Teachers will rarely ask, “What did you learn?” No, no. They’ll ask, “Did you complete your pages?” The aim is clear: fill pages, don’t ask questions, and hope for the best. Oh, and if you didn’t do your homework? Be prepared for a punishment that will make you question every life choice you’ve made.</p>
+        <h3>The Fashion Police: School Codes Over Common Sense</h2>
+        <p>And then there are the <strong>uniform rules</strong>, which are often more about enforcing conformity than any logical reason. Picture this: you’ve studied all night, you’re tired, and all you want is to feel cozy in your jacket. But wait—if it’s not the <em>official school jacket</em>, forget it! You’ll be sent to the principal’s office for daring to wear something that isn’t deemed “school-appropriate.”</p>
+        <p>But the real fashion drama begins with the school-colored cap or muffler. Heaven forbid you forget to wear it. This tiny, innocuous piece of fabric somehow becomes a badge of honor—or, in your case, a ticket to a lecture about discipline. Forget about the fact that the real focus should be on <strong>learning</strong>—you now have to explain why you decided to skip the school-colored muffler in favor of your actual winter gear, which is warmer and, well, practical.</p>
+        <h3>The Double Standards of Discipline</h2>
+        <p>Don’t even get me started on <strong>punishments</strong> for minor infractions. Not wearing the correct cap? That’s a point off your perfect attendance record. Not tucking in your shirt properly? Prepare for a lecture on “respecting school discipline” as if you’ve just committed the ultimate crime. It's almost as if the real reason for the school rules is to give teachers a chance to practice their authoritative speeches, rather than actually helping students understand the importance of discipline.</p>
+        <p>But here's the twist: no one seems to be concerned about whether the students are actually <strong>learning</strong>. As long as they’re obedient, following the dress code, and collecting good grades, everything’s fine. Who cares if the knowledge sticks or not? At least they look good doing it!</p>
+        <h3>The Ever-Expanding Focus on Exams Over Everything Else</h3>
+        <p>In the end, education in Nepal often feels like it’s all about jumping through hoops. It’s not about nurturing well-rounded individuals or teaching students how to think for themselves. It’s about <strong>getting those grades</strong>—because grades are the only thing that seem to matter. What about creativity? Critical thinking? Passion for a subject? Sorry, those got lost somewhere in between the piles of homework and the school uniform checklist.</p>
+        <p>It’s a cycle of exams, grades, uniforms, and rules that don’t seem to go anywhere. Students are expected to memorize and perform, not think or create. And the result? A generation of students who know how to pass exams, but often struggle to apply their knowledge outside of the classroom. But hey, as long as they get good grades, who’s complaining?</p>
+
+        <p>So, there you have it—Nepal’s education system in a nutshell: a comedy of exams, grades, and nonsensical rules, where looking the part matters more than actually learning. It's a wild ride, but hey, it's the ride we’re all stuck on.</p>
+
+
+
+        <h2>The Monopoly of Schools: "You Must Buy, or Else!"</h1>
+
+        <p>In the grand scheme of things, the education system in Nepal has a little-known but highly effective side hustle: <strong>selling students everything they need to "fit in."</strong> No, we’re not talking about the basics like textbooks or notebooks, which you might expect. Oh no. Schools have taken it to the next level by creating their own little economy, where you, the poor student, must buy anything and everything that the school deems "necessary."</p>
+        <h3>1. The Uniform: Because Your Personality Doesn’t Matter</h2>
+        <p>First, let’s talk about the <strong>uniform</strong>. You thought your wardrobe was your own, didn’t you? Well, surprise! Schools have created a fashion police state where the only colors that matter are the ones approved by the school board. The school dictates not only what you wear, but <strong>where you can buy it</strong>. The school doesn’t trust your ability to find a decent pair of pants, so they’ve carefully partnered with a <em>very special</em> tailor, who just so happens to charge you <strong>three times the price</strong> of what you’d pay at the local market. You didn’t realize it, but you’ve just signed up to fund their side business.</p>
+        <p>And don’t even think about wearing a jacket that isn’t the “official school jacket.” That’ll get you a lecture about discipline. You have no choice—if you want to stay in the good books of the school, you’ll cough up the money for that jacket, those socks, that school-colored muffler, and maybe even a specific kind of cap. <strong>No questions asked</strong>, just buy. You have no other option!</p>
+
+        <h3>2. The Stationery: Because You Don’t Know What’s "Correct"</h2>
+        <p>Next up: <strong>stationery.</strong> You thought a simple pen and notebook would do, right? Wrong! The school has a very clear, and very lucrative, agenda here: you <strong>MUST</strong> buy the pens, pencils, and erasers they sell, all of which are available in their <strong>exclusive school shop</strong>. Because, of course, they know better than you about what supplies will help you "succeed." The pens are absurdly overpriced, but they come with the label of “School-approved,” which apparently gives them magical powers. Regular pens? Not good enough. You need the <strong>“Official School Pen”</strong> which only works if you buy it directly from the school shop. Plus, those notebooks that feel like they’re made of recycled cardboard? They’re probably worth more to the school than your future grades!</p>
+        <p>If you dare to buy anything from outside the school store? You’ll get that look from teachers—like you’re some kind of rogue rebel who doesn’t respect the school system. Forget the fact that the notebook you bought outside is half the price and lasts longer. <strong>You’re supposed to follow the rules</strong>—and that rule involves funding the school's exclusive supply chain.</p>
+
+        <h3>3. The "Special" Textbooks: Prepare to Be Ripped Off</h2>
+        <p>Oh, and let’s not forget about the <strong>textbooks</strong>. These are truly a class apart. Schools insist you buy certain textbooks from them, often overpriced and sometimes outdated. These textbooks are often authored by a school-approved “local publisher” who, oddly enough, is always connected to the school administration in some way. Now, instead of getting textbooks from a wider variety of educational resources, students are <strong>locked into buying</strong> from a system that is as much about padding the pockets of the school as it is about providing quality education.</p>
+        <p>The best part? If you ask to borrow textbooks, prepare to get that look as if you’ve just asked to take their lunch from their plate. The textbooks? Well, those are <strong>private property</strong> now, and there’s no sharing or second-hand use allowed. <strong>Buying new textbooks</strong> is the only option if you want to stay in the good books of the school—and let's face it, nobody wants to risk failing because they didn’t have the "official textbook" for a subject that no one cares about.</p>
+
+ 
+        <h3>4. The "Mandatory" Extra Fees and Activities: The Hidden School Tax</h2>
+        <p>But wait—there’s more! Beyond the uniforms, the stationery, and the textbooks, there’s a whole hidden economy that schools have built around extra fees and so-called "mandatory" activities. You need to pay for <strong>sports day</strong>? Sure, even though you’re not athletic at all and have no interest in running. You have to contribute for the <strong>annual school trip</strong>? Great, even though you’re not going on it. You didn’t think that annual music concert, where everyone stands awkwardly, would be free, did you? Of course not—every student must contribute to the “event fee,” whether they attend or not.</p>
+        <p>Schools have this uncanny ability to invent activities that <strong>require money</strong> but are mysteriously optional. It’s like a never-ending cycle where students are told, “Oh, this is for your <strong>growth</strong>,” but it mostly benefits the school’s <strong>bank account.</strong></p>
+
+    
+        <h3>5. The Unwritten Rule: Do You Want to Be Popular? Then Buy What Everyone Else Is Buying!</h2>
+        <p>The ultimate kicker? The <strong>social pressure</strong> that forces students to participate in this “buying frenzy.” Because guess what? If you don’t have that branded school bag, or you aren’t wearing the official uniform with all the little badges, or you don’t have the special pens, you might as well be wearing a neon sign that says “I don’t belong here.” Peer pressure is in full force as your classmates eagerly flaunt the latest <em>school-approved</em> products, knowing full well that they’re just as overpriced as they are unnecessary.</p>
+        <p>If you <strong>really</strong> want to fit in, you have to keep up. So, you end up buying things you don’t need, just to stay afloat in the sea of “school-required” goods. It’s a well-oiled machine designed to separate you from your hard-earned money.</p>
+
+        <p><strong>Conclusion:</strong> So, there you have it—education in Nepal isn't just about learning; it’s about <strong>buying into the system</strong>. The schools set up an elaborate market where students have no choice but to participate. Whether it’s uniforms, stationery, textbooks, or mysterious fees, it’s all part of the “education experience.” In the end, you're not just paying for school—you’re paying for the privilege of being in a system that requires you to buy, buy, buy. And the funny thing is, you’ll pay all this money… for an education that sometimes doesn't even teach you how to make sense of it all. Welcome to the <strong>school monopoly</strong>, where the only real thing that’s guaranteed is that you’ll spend money. A lot of money.</p>
+
+
+
+    <p>The education system in Nepal has undergone significant changes over the years. While much progress has been made in terms of accessibility and inclusion, there are still various challenges that prevent it from achieving its full potential. Below, we provide an overview of the key aspects of Nepal's education system:</p>
+    
+    <h3>Overview of Nepal's Education System</h3>
+    <p>Nepal’s education system is structured around the following levels:</p>
+    <ul>
+        <li><strong>Early Childhood Education (ECE):</strong> The foundational stage where children begin their learning journey. Although it's not universally available, there has been an effort to increase access to pre-primary education.</li>
+        <li><strong>Primary Education:</strong> Lasting from grades 1 to 5, primary education is free and compulsory for all children in Nepal. However, challenges such as overcrowded classrooms and a lack of quality teaching remain.</li>
+        <li><strong>Secondary Education:</strong> This level includes grades 6 to 10, where students focus on general education or select a stream in subjects like science, arts, and commerce. However, resources are limited, and the quality of education varies significantly between urban and rural areas.</li>
+        <li><strong>Higher Education:</strong> Nepal offers various colleges and universities that provide undergraduate and postgraduate programs. However, many institutions are underfunded and struggle to maintain quality standards.</li>
+    </ul>
+
+    <h3> Challenges Facing the Education System</h3>
+    <p>Despite the strides made in expanding access to education, the system is still grappling with several significant challenges:</p>
+    <ul class="issues-list">
+        <li><strong>Underfunding and Resource Constraints:</strong> Many schools, particularly in rural areas, lack the basic resources like textbooks, learning materials, and modern educational tools. This gap significantly impacts the learning experience of students.</li>
+        
+        <li><strong>Teacher Shortages and Training:</strong> There is a lack of qualified teachers, especially in rural and remote areas. Many teachers also lack proper training in modern teaching methods, resulting in a poor educational experience for students.</li>
+        
+        <li><strong>Gender Disparities:</strong> Although Nepal has made great strides in gender equality in education, there are still disparities, especially in rural areas. Many girls drop out of school due to societal pressure or early marriages.</li>
+        
+        <li><strong>Lack of Technological Integration:</strong> While the world is moving towards digital education, Nepal’s schools, particularly in rural areas, are still lagging behind in integrating technology into the classroom. Many students do not have access to computers or the internet.</li>
+        
+        <li><strong>Curriculum Issues:</strong> The curriculum in Nepal is highly exam-oriented, with an overemphasis on rote memorization rather than fostering critical thinking, creativity, and problem-solving skills. This system does not prepare students adequately for real-world challenges.</li>
+    </ul>
+
+    <h3> Government Policies and Initiatives</h3>
+    <p>The government of Nepal has launched various initiatives to improve education in the country, including:</p>
+    <ul>
+        <li><strong>Free Primary Education:</strong> The government has made primary education free and compulsory, which has contributed to an increase in enrollment rates, particularly in rural areas.</li>
+        <li><strong>Education for All (EFA) Program:</strong> The EFA program aims to provide quality education for all children, regardless of gender, disability, or geographic location. This program is part of Nepal’s commitment to the United Nations' Millennium Development Goals.</li>
+        <li><strong>Scholarships for Marginalized Groups:</strong> The government offers scholarships to students from marginalized communities, including Dalits, indigenous groups, and economically disadvantaged families.</li>
+        <li><strong>Curriculum Reforms:</strong> In recent years, the government has begun revising the curriculum to make it more student-centered and competency-based, although full implementation has been slow.</li>
+    </ul>
+
+    <h3> The Way Forward: Areas for Improvement</h3>
+    <p>Despite these efforts, Nepal’s education system still has much room for improvement. Here are key areas that need attention:</p>
+    <ul>
+        <li><strong>Quality of Education:</strong> There needs to be a focus on improving the quality of education in terms of curriculum, teaching methods, and assessment. Teachers should be better trained, and schools should have access to modern teaching aids.</li>
+        
+        <li><strong>Equitable Access:</strong> Efforts should continue to improve access to education for all children, especially those in rural or marginalized communities. This includes improving infrastructure, providing scholarships, and reducing dropout rates.</li>
+        
+        <li><strong>Inclusivity:</strong> Gender equality, inclusive education for children with disabilities, and eliminating social discrimination should be at the forefront of educational reforms.</li>
+        
+        <li><strong>Technology Integration:</strong> Integrating digital tools and technology into the education system is essential for preparing students for the modern world. The government should invest in providing tech resources for schools, particularly in rural areas.</li>
+        
+        <li><strong>Practical Learning:</strong> The education system should shift towards practical learning, problem-solving, and life skills, rather than focusing solely on exams. This can help students better prepare for the real world.</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>In conclusion, while Nepal has made notable progress in its education system, there is still much work to be done to address the challenges of quality, accessibility, and equity. By investing in teacher training, modernizing the curriculum, and focusing on inclusivity and technology, Nepal can continue its journey towards providing quality education for all.</p>
+
+    <!-- New Section: Ineffective Homework and Punishments for Not Doing Homework -->
+    <h3>Ineffective Homework System and Punishments</h3>
+    <p>While homework is an integral part of education, the homework system in Nepal is often criticized for its ineffectiveness and failure to serve its intended purpose. Here’s why:</p>
+    
+    <ul>
+        <li><strong>Excessive Homework:</strong> In many schools, students are burdened with an excessive amount of homework that takes up much of their time outside of school hours. This leaves little room for extracurricular activities, family time, or relaxation, which are also crucial for a child's development.</li>
+        <li><strong>Lack of Relevance:</strong> A significant portion of the homework assignments are not directly related to what students are learning in class. This disconnection can make homework feel like a meaningless task, rather than an opportunity for learning and skill development.</li>
+        <li><strong>Focus on Rote Learning:</strong> Many homework assignments in Nepal focus heavily on rote memorization rather than encouraging critical thinking, creativity, or problem-solving. This does not contribute to long-term learning or skill-building.</li>
+        <li><strong>Limited Feedback:</strong> Teachers often do not provide adequate feedback on homework, making it difficult for students to understand where they went wrong and how they can improve.</li>
+    </ul>
+
+    <p>In addition to the ineffective homework system, punishments for not completing homework are often harsh and demotivating:</p>
+    
+    <ul>
+        <li><strong>Corporal Punishment:</strong> While corporal punishment is officially banned, it is still practiced in some areas, with students being hit or humiliated in front of their peers for not completing assignments.</li>
+        <li><strong>Public Shaming:</strong> Some schools use public shaming as a punishment, where students are forced to stand in front of the class or write lines to “correct” their behavior. This often results in embarrassment, lowers students' self-esteem, and does not effectively address the root cause of incomplete homework.</li>
+        <li><strong>Loss of Recess Time:</strong> In some schools, students are deprived of their recess or break time as punishment for not completing homework. This leads to further stress and anxiety and reduces the students' opportunity to refresh themselves during the school day.</li>
+        <li><strong>Negative Impact on Mental Health:</strong> The constant pressure to complete an overwhelming amount of homework and the fear of harsh punishments for not doing so negatively affects students' mental health, leading to stress, burnout, and a lack of motivation to engage with learning.</li>
+    </ul>
+
+    <h3>Punishing Students for Dress Code Violations</h3>
+    <p>Another issue that has been gaining attention is the harsh punishment of students for not adhering to strict dress codes, especially when students do not have access to the required items or cannot afford them. In some schools, students have been punished for wearing mufflers, caps, or accessories that do not align with the prescribed school uniform color, leading to unnecessary embarrassment and stress.</p>
+
+    <p>Key points to consider regarding this issue include:</p>
+    
+    <ul>
+        <li><strong>Strict Dress Code Enforcement:</strong> Many schools in Nepal have rigid dress codes, often focused on uniformity in terms of color and style. While maintaining a dress code can promote discipline, it often disregards the reality that not all students can afford the required items.</li>
+        <li><strong>Punishments for Violations:</strong> Students who are unable to comply with these dress codes due to lack of availability or financial constraints are sometimes subjected to harsh punishments such as detention, humiliation in front of peers, or even suspension. These punishments do not address the root cause of the problem and can lead to negative emotional and psychological effects on students.</li>
+        <li><strong>Emotional and Social Consequences:</strong> Being punished or blamed for something beyond a student's control can lead to feelings of inadequacy, embarrassment, and social exclusion. It can also foster a negative attitude towards school and education.</li>
+        <li><strong>Supportive Solutions Needed:</strong> Rather than punishing students for dress code violations, schools should consider more empathetic solutions. This could include providing support for students in need, offering alternatives when required items are unavailable, or relaxing the dress code to accommodate students' diverse needs.</li>
+    </ul>
+
+    <CENTER><h2>THIS IS NEPAL VIEWERS EVERYTHING CAN HAPPEN</H2></CENTER>
+</section>
+
+<section id="news" class="page-content fadeIn" style="display:none;">
+   <p>Student injuries resulting from school neglect or teacher-inflicted violence remain pressing concerns in Nepal's educational landscape.</p>
+<h3>Teacher-Inflicted Injuries</h3>
+<p>Despite legal prohibitions, corporal punishment persists in some schools. In February 2025, a teacher at Prabhat Academy in Bhimad, Tanahun district, allegedly burned four students' cheeks with a heated metal spatula for misbehavior during an exam. The incident led to the teacher's arrest. </p>
+<p>In June 2020, at Bhanu Primary School in Rolpa district, a teacher reportedly injured 14 students by thrashing them with a cane for tardiness. Some victims required medical attention, including plaster casts. </p>
+<p>Such incidents highlight the ongoing issue of corporal punishment in Nepalese schools, despite its legal prohibition. Studies indicate that many educators and students still perceive physical discipline as effective, underscoring the need for comprehensive awareness and policy </p>
+<h3>Injuries Due to School Neglect</h3>
+<p>Beyond direct violence, school-related injuries often result from neglect. A study in Kathmandu found that falls (65%) and cuts (63%) were the most common injuries among adolescents, followed by transport-related injuries (36%) and burns (22%). In urban areas, falls accounted for 59% of injuries, while in semi-urban areas, they constituted 66%. Boys were typically injured during sports, whereas girls were more often hurt while walking on streets or stairs. </p>
+<p>These findings suggest that inadequate supervision and safety measures contribute to student injuries, emphasizing the need for improved school infrastructure and safety protocols.</p>
+<h3>Psychological Impact</h3>
+<p>The psychological effects of corporal punishment are profound. Victims may experience feelings of anger, aggression, and reluctance to attend school. A study found that 42.25% of students subjected to corporal punishment reported deteriorating academic performance, while 41.78% developed aversions to school.</p>
+<h3>Legal Framework and Enforcement</h3>
+<p>Nepal is the first country in South Asia to entirely prohibit corporal punishment. However, enforcement challenges persist, with reports of ongoing physical discipline in schools. Strengthening legal frameworks, conducting awareness campaigns, and training educators are essential steps toward eliminating such practices. </p>
+<p>Addressing both physical and psychological injuries resulting from school neglect and teacher-inflicted violence requires a multifaceted approach, including policy enforcement, education reform, and community engagement to ensure safe and supportive learning environments for all students.</p>
+
+
+</SECTION>
+
+<section id="contact" class="page-content fadeIn" style="display:none;" >
+    <div class="container">
+    <h2>Contact Us</h2>
+    <p class="intro">
+      Have questions, suggestions, or want to get involved with our mission at Education Nepal? We’d love to hear from you!
+    </p>
+
+    <ul class="contact-details">
+      <li><strong>Email:</strong> <a href="mailto:info@educationnepal.org">info@educationnepal.org</a></li>
+      <li><strong>Phone:</strong> <a href="tel:+9771XXXXXXX">+977 1-XXXX-XXXX</a></li>
+      <li><strong>Address:</strong> Kathmandu, Nepal</li>
+    </ul>
+
+    <div class="social-media">
+      <p>Follow us on:</p>
+      <a href="#" aria-label="Facebook">Facebook</a> |
+      <a href="#" aria-label="Twitter">Twitter</a> |
+      <a href="#" aria-label="Instagram">Instagram</a>
+    </div>
+
+    <form class="contact-form" action="#" method="post">
+      <h3>Send Us a Message</h3>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Education System in Nepal. All rights reserved.</p>
+</footer>
+
+<script>
+    function showPage(page) {
+        // Function to show/hide pages (simple navigation)
+        const pages = ['home', 'main', 'news', 'contact'];
+        pages.forEach(p => {
+            document.getElementById(p).style.display = (p === page) ? 'block' : 'none';
+        });
+    }
+</script>
+
+</body>
+</html>
